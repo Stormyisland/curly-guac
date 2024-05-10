@@ -8,10 +8,10 @@ from plotly import graph_objs as go
 
 START = "2015-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
-
+st.sidebar.image("icon1.png")
 st.title("Stock Prediction App")
 
-stocks = ("MSFT","GOOG", "BTC", "NVDA", "TSLA", "LCID")
+stocks = ("MSFT","GOOG", "BTC", "NVDA", "TSLA", "LCID", "PRTC", "AVAV", "META", "AI" )
 selected_stock = st.selectbox("Select dataset for prediction", stocks)
 
 n_years = st.slider("Years of prediction:", 1, 8)
